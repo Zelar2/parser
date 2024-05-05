@@ -120,7 +120,7 @@ async def parse_project(client: httpx.AsyncClient, i: int, project_id: str = Non
     """
     result = {}
     item_columns = ['applicationName', 'shortDescriptionRaw', 'socialGroupsRaw', 'aimsRaw',
-                    'tasksRaw', 'startDate', 'finalDate']
+                    'tasksRaw', 'socialDescriptionRaw', 'startDate', 'finalDate']
     result_columns = ['qualityResult', 'evaluation']
 
     async with sem:
